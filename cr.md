@@ -43,6 +43,6 @@ Il est d'ailleurs très intéressant d'opter pour ce type de chargements pour le
 ## Remarque :
 1-Comme nous avons discuté en TP, la relation entre **Playlist** et **Song** est plutôt une @ManyToMany mais pas une  @OneToMany car une playlist peut contenir plusieurs sons et un son peut appartenir à plusieurs playlists.
 
-##Suggestion : 
+## Suggestion : 
 Il est intéressant d'implémenter un héritage entre  **Artist** et **User** car un artist est un utilisateur particulier qui peut publier des sons de son choix sur une plateforme comme Spotify par exemple.
 
