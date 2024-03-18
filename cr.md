@@ -38,3 +38,11 @@ Si jamais cette entité n'est pas annotée avec le type de cascade correspondant
 Non l'entité n'est pas entièrement chargée car par défaut JPA applique un chargement paresseux (Lazy loading), cela dit que la liste des sons de la playlist ne sont pas immédiatement chargés car il y a aucune configuration du chargement ajoutée aux deux entités.
 Il est d'ailleurs très intéressant d'opter pour ce type de chargements pour les relations OneToMany par exemple pour des raison de performances en évitant d'intéroger notre base de données.
 (Les accès au disque sont très couteux)
+
+
+## Remarque :
+1-Comme nous avons discuté en TP, la relation entre **Playlist** et **Song** est plutôt une @ManyToMany mais pas une  @OneToMany car une playlist peut contenir plusieurs sons et un son peut appartenir à plusieurs playlists.
+
+##Suggestion : 
+Il est intéressant d'implémenter un héritage entre  **Artist** et **User** car un artist est un utilisateur particulier qui peut publier des sons de son choix sur une plateforme comme Spotify par exemple.
+
